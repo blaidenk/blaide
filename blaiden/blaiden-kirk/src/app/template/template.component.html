@@ -123,6 +123,7 @@
         border-radius: 8px;
         border: 1px solid #223;
         background-color: rgba(40, 40, 40, 0.95);
+        color: white;
         height: 40px;
         width: 224px;
         margin: 0 8px 16px;
@@ -189,11 +190,12 @@
         z-index: -10;
     }
     
-    a,
-    a:visited,
-    a:hover {
-        color: #ffffff;
-        text-decoration: none;
+    a {
+        color: #ffffff
+    }
+    
+    a:visited {
+        color: #73bee4;
     }
     
     a:hover {
@@ -302,6 +304,7 @@
      ::ng-deep .mat-menu-panel {
         background-color: rgba(27, 31, 35, .7);
         border-radius: 20%;
+        display: grid;
     }
     
     .mat-button {
@@ -422,11 +425,14 @@
         loading="lazy"></iframe>
 
     <mat-menu #ranking="matMenu" class="mat-menu-panel">
-        <a class="card" routerLink="/nba-player-ranking-quiz" routerLinkActive="active" target="_blank" ariaCurrentWhenActive="page">
-            <span>NBA Player Ranking Quiz</span>
-        </a>
         <a class="card" routerLink="/qb-ranking-quiz" routerLinkActive="active" target="_blank" ariaCurrentWhenActive="page">
-            <span>QB Ranking Quiz</span>
+            <span>NFL QBs</span>
+        </a>
+        <a class="card" routerLink="/nba-player-ranking-quiz" routerLinkActive="active" target="_blank" ariaCurrentWhenActive="page">
+            <span>NBA Players</span>
+        </a>
+        <a class="card" routerLink="/nfl-team-ranking-quiz" routerLinkActive="active" target="_blank" ariaCurrentWhenActive="page">
+            <span>NFL Teams</span>
         </a>
     </mat-menu>
 
