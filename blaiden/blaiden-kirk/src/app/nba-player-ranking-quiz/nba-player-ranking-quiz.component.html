@@ -1,0 +1,62 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stay Hot NBA Player Rankings</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/StayHotLogo.jpg">
+    <script></script>
+</head>
+
+<header>
+    <img id="stayhotpic" src="assets/images/STAY HOT PODCAST-TW HEADER-YOUTUBE.jpg">
+</header>
+
+<body>
+
+    <div id="stayhot">
+        <h2>
+            NBA Player Ranking Quiz
+        </h2>
+    </div>
+
+    <ol type="1" id="results">
+    </ol>
+    <div id="buffer">
+    </div>
+    <ol type="1" id="consensus">
+    </ol>
+    <div id="progress">
+        <div class="progress">
+
+            <div id="completion" [style.width]="progressBar">PROGRESS...</div>
+
+        </div>
+    </div>
+
+    <div id="wrapper">
+        <div id="one" class="button" (click)="selected('one');">
+            <div class="image" [style.background-image]="'url('+getOneImg+')'"></div>
+            <div class="text"> {{ getOneTxt }}</div>
+        </div>
+        <div id="two" class="button" (click)="selected('two');">
+            <div class="image" [style.background-image]="'url('+getTwoImg+')'"></div>
+            <div class="text"> {{ getTwoTxt }}</div>
+        </div>
+    </div>
+
+    <!-- <div id="wrapper">
+        <div id="one" class="button" (click)="selected('one');">
+            <img class="image" [src]="getOneImg">
+            <div class="text"> {{ getOneTxt }}</div>
+        </div>
+        <div id="two" class="button" (click)="selected('two');">
+            <img class="image" [src]="getTwoImg">
+            <div class="text"> {{ getTwoTxt }}</div>
+        </div>
+    </div> -->
+
+</body>
+
+</html>
