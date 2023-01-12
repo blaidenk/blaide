@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/blaiden-kirk.props" />
+</Project>
